@@ -8,7 +8,7 @@
 
   <div class="elevator-positions">
     <h3>Request generated: 
-      <span *ngIf="request.floor !== 0">Floor {{request.floor}} to go {{request.direction}}</span>
+      <span *ngIf="request.floor !== 0">"{{request.direction}}" request on floor {{request.floor}} received</span>
     </h3>
     <h3>Elevator Positions and Statuses:</h3>
     <div *ngFor="let position of elevatorPositions">
