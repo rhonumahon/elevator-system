@@ -1,0 +1,18 @@
+<div class="elevator-system">
+  <h1>Elevator Control System</h1>
+  <!-- <div *ngFor="let floor of floors" class="floor">
+    <p>Floor {{ floor }}</p>
+    <button (click)="requestElevator(floor, 'up')">Up</button>
+    <button (click)="requestElevator(floor, 'down')">Down</button>
+  </div> -->
+
+  <div class="elevator-positions">
+    <h3>Request generated: 
+      <span *ngIf="request.floor !== 0">Floor {{request.floor}} to go {{request.direction}}</span>
+    </h3>
+    <h3>Elevator Positions and Statuses:</h3>
+    <div *ngFor="let position of elevatorPositions">
+      <p>{{ position }}</p>
+    </div>
+  </div>
+</div>
