@@ -2,8 +2,8 @@
   "name": "elevator-system",
   "version": "0.0.0",
   "scripts": {
-    "start": "serve -s dist/elevator-system",
-    "build": "ng build --prod",
+      "start": "serve -s dist/elevator-system",
+  "build": "ng build --prod",
     "serve": "serve -s dist/elevator-system",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
