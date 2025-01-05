@@ -2,14 +2,16 @@
   "name": "elevator-system",
   "version": "0.0.0",
   "scripts": {
-    "start": "node_modules/.bin/ng serve",
-    "build": "ng build",
+    "start": "serve -s dist/elevator-system",
+    "build": "ng build --prod",
     "serve": "serve -s dist/elevator-system",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^13.3.11",
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
